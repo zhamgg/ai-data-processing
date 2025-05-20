@@ -5,7 +5,7 @@ import random
 
 # Set page configuration
 st.set_page_config(
-    page_title="BoardingPass AI Data Processing Demo",
+    page_title="AI Data Processing Demo",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -93,7 +93,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Main title
-st.markdown('<div class="main-header">BoardingPass AI Data Processing Demonstration</div>', unsafe_allow_html=True)
+st.markdown('<div class="main-header">AI Data Processing Demo</div>', unsafe_allow_html=True)
 
 # Sidebar content
 with st.sidebar:
@@ -122,7 +122,7 @@ with st.sidebar:
     st.markdown("---")
     st.markdown("### About This Demo")
     st.markdown("""
-    This dashboard demonstrates the AI-powered data processing capabilities of the enhanced BoardingPass platform:
+    This dashboard demonstrates AI-powered Data Processing Capabilities:
 
     1. **Intelligent Pipeline Orchestration** - Dynamically selects the appropriate processing workflow
     
@@ -217,11 +217,11 @@ with orchestration_col1:
     
     # Simulate processing
     for i in range(101):
-        file_type_progress.progress(i)
+        file_type_progress.progress(i/100)
         if i > 30:
-            source_analysis_progress.progress(min(100, (i-30)*1.5))
+            source_analysis_progress.progress(min(1.0, (i-30)*1.5))
         if i > 70:
-            workflow_selection_progress.progress(min(100, (i-70)*3.5))
+            workflow_selection_progress.progress(min(1.0, (i-70)*3.5))
         time.sleep(0.01)
 
 with orchestration_col2:
