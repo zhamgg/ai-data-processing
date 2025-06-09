@@ -666,6 +666,6 @@ with takeaways_col2:
 st.markdown("---")
 st.markdown("""
 <div style="text-align: center; color: #6B7280; font-size: 0.8rem;">
-    Great Gray AI Data Processing Demonstration | May 20, 2025
+    Great Gray AI Data Processing Demonstration | AHUB 2.0 Demo: https://datawh-demo.streamlit.app/
 </div>
 """, unsafe_allow_html=True)
